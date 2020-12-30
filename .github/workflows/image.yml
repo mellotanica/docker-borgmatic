@@ -21,12 +21,5 @@ jobs:
         run: |
           docker buildx build --push \
           --tag mellotanica/borgmatic:latest \
-          --platform linux/amd64,linux/arm/v7,linux/arm64 base && \
-          docker buildx build --push \
-          --tag mellotanica/borgmatic:latest-msmtp \
-          --platform linux/amd64,linux/arm/v7,linux/arm64 msmtp && \
-          docker buildx build --push \
-          --tag mellotanica/borgmatic:latest-ntfy \
-          --platform linux/amd64,linux/arm/v7,linux/arm64 ntfy
-
+          --platform linux/amd64,linux/arm/v7,linux/arm64 base
 
