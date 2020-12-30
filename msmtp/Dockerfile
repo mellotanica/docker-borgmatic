@@ -1,5 +1,5 @@
-FROM b3vis/borgmatic:v1.1.15-1.5.12
-MAINTAINER b3vis
+FROM mellotanica/borgmatic:v1.1.15-1.5.12
+MAINTAINER mellotanica
 COPY entry.sh /entry.sh
 RUN apk upgrade --no-cache \
     && apk add --no-cache \

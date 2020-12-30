@@ -1,5 +1,5 @@
 FROM alpine:latest as builder
-LABEL mainainer='b3vis'
+LABEL mainainer='mellotanica'
 ARG BORG_VERSION=1.1.15
 ARG BORGMATIC_VERSION=1.5.12
 ARG LLFUSE_VERSION=1.3.6
@@ -21,7 +21,7 @@ RUN apk upgrade --no-cache \
     && pip3 install --upgrade llfuse==${LLFUSE_VERSION}
 
 FROM alpine:latest
-LABEL mainainer='b3vis'
+LABEL mainainer='mellotanica'
 COPY entry.sh /entry.sh
 RUN apk upgrade --no-cache \
     && apk add --no-cache \

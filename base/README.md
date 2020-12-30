@@ -1,7 +1,7 @@
 # Borgmatic Container
 <img src="https://github.com/witten/borgmatic/raw/master/docs/static/borgmatic.png" />
 
-[![](https://images.microbadger.com/badges/image/b3vis/borgmatic.svg)](https://microbadger.com/images/b3vis/borgmatic "Get your own image badge on microbadger.com") <img src="https://img.shields.io/docker/pulls/b3vis/borgmatic.svg" />
+[![](https://images.microbadger.com/badges/image/mellotanica/borgmatic.svg)](https://microbadger.com/images/mellotanica/borgmatic "Get your own image badge on microbadger.com") <img src="https://img.shields.io/docker/pulls/mellotanica/borgmatic.svg" />
 
 ### Description
 
@@ -26,7 +26,7 @@ docker run \
   -v /opt/docker/docker-borgmatic/data/.ssh:/root/.ssh \
   -v /opt/docker/docker-borgmatic/data/.cache/borg:/root/.cache/borg \
   -e TZ=Europe/Berlin \
-  b3vis/borgmatic
+  mellotanica/borgmatic
 ```
 While the parameters above are sufficient for regular backups, following additional privileges will be needed to mount an archive as FUSE filesystem:
 ```
